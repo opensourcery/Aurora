@@ -3,7 +3,7 @@ This is a fork of the original Aurora compass extension which adds the `arcrturu
 
 ## How to use within Turnip
 This code is never used directly within the scope of [Turnip](https://github.com/opensourcery/turnip), rather the associated gem (coming soon) is used to
-spin up an instance inside Turnip (this will eventually be scripted).
+spin up an Aurora subtheme instance inside Turnip. Ideally this will become a step in `make-install-profile` script.
 
 # Original docs
 
