@@ -36,13 +36,7 @@ See if you got out of the spin up what you thought you did. Rinse. Repeat.
 
 ### Pushing an Update
 Once you have everything together for and update, we want to up the version
-number and date in `/os-ace/lib/os-aurora.rb`, then push to github. (We're using github for now as )
-
-4. Spin up a subtheme.
-5. Run `bundle install`
-
-?? RIGHT ??
-
+number and date in `/os-ace/lib/os-aurora.rb`, then push to github. (We're using github for now as we are not sure if we want another gem on rubygems)
 
 # Original docs
 
