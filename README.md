@@ -28,9 +28,10 @@ You might need admin/sudo for that one. Next, you want to do some local testing:
 
 2. Install the dependncies
 
-`cd my_theme`
-
-`bundle install`
+```bash
+cd my_theme
+bundle install
+```
 
 See if you got out of the spin up what you thought you did. Rinse. Repeat.
 
