@@ -3,8 +3,8 @@ require './lib/os-aurora'
 Gem::Specification.new do |s|
   # General Project Information
   s.name = "os-compass-aurora"
-  s.version = OS_Aurora::VERSION
-  s.date = OS_Aurora::DATE
+  s.version = Aurora_OS::VERSION
+  s.date = Aurora_OS::DATE
   #s.rubyforge_project = "compass-aurora"
   s.rubygems_version = "1.7.2"
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2")

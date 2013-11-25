@@ -14,11 +14,11 @@ The workflow is fairly straightforward:
 1. Make changes.
 2. Roll the gem:
 
-`gem build os-compass-aurora.gemspec`
+`gem build compass-aurora-os.gemspec`
 
 3. Install locally:
 
-`gem isntall os-compass-aurora-0.0.1.gem`
+`gem isntall compass-aurora-os-0.0.1.gem`
 
 You might need admin/sudo for that one. Next, you want to do some local testing:
 
