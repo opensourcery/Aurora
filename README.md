@@ -24,7 +24,7 @@ You might need admin/sudo for that one. Next, you want to do some local testing:
 
 1. Spin up a subtheme:
 
-`compass create my_theme -r os-aurora --using os-aurora/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts`
+`compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts`
 
 2. Install the dependncies
 
