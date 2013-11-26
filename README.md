@@ -12,19 +12,31 @@ To get started, be sure you have the libraries for Sass+Compass ([install help](
 
 The workflow is fairly straightforward:
 
+* Be sure you have dependencies:
+
+```bash
+bundle install
+```
+
 * Make changes, and roll the gem:
 
-`gem build compass-aurora-os.gemspec`
+```bash
+gem build compass-aurora-os.gemspec
+```
 
 * Install locally:
 
-`gem install compass-aurora-os-0.1.0.gem`
+```bash
+gem install compass-aurora-os-0.1.0.gem
+`
 
 You might need admin/sudo for that one. Next, you want to do some local testing:
 
 * Spin up a subtheme:
 
-`compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts`
+```bash
+compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts
+````
 
 * Install the dependncies
 
