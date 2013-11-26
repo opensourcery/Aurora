@@ -4,11 +4,12 @@ This is a fork of the original Aurora compass extension which adds the `arcrturu
 It should be noted that this code is never used directly within a build. Rather this codebase is the source for the gem that used to spin up the subtheme.
 
 ## Development Workflow
-First, be sure you have the libraries for Sass+Compass ([install help](http://snugug.com/musings/installing-sass-and-compass-across-all-platform)):
+To be clear, this is the development workflow for **maintaining the gem source**, if you just want to use the extension to spin up a subtheme, head over to the [gem repo](https://github.com/opensourcery/os-ace_gem).
+
+To get started, be sure you have the libraries for Sass+Compass ([install help](http://snugug.com/musings/installing-sass-and-compass-across-all-platform)):
 
 * `ruby`, `rubygems`, and `compass`
 
-### Development Workflow
 The workflow is fairly straightforward:
 
 1. Make changes.
@@ -18,7 +19,7 @@ The workflow is fairly straightforward:
 
 3. Install locally:
 
-`gem install compass-aurora-os-0.0.1.gem`
+`gem install compass-aurora-os-0.1.0.gem`
 
 You might need admin/sudo for that one. Next, you want to do some local testing:
 
