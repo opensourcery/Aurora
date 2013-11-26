@@ -33,7 +33,8 @@ cd my_theme
 bundle install
 ```
 
-See if you got out of the spin up what you thought you did. Rinse. Repeat.
+See if you got out of the spin up what you thought you did. Rinse. Repeat. There are grunt utilites bundled with the output of the gem as well, see the
+[gem repo](https://github.com/opensourcery/os-ace_gem) for more.
 
 ### Pushing an Update
 Once you have everything together for and update, we want to up the version
