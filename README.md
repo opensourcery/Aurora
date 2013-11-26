@@ -28,7 +28,7 @@ gem build compass-aurora-os.gemspec
 
 ```bash
 gem install compass-aurora-os-0.1.0.gem
-`
+```
 
 You might need admin/sudo for that one. Next, you want to do some local testing:
 
