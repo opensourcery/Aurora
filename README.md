@@ -18,7 +18,7 @@ The workflow is fairly straightforward:
 
 3. Install locally:
 
-`gem isntall compass-aurora-os-0.0.1.gem`
+`gem install compass-aurora-os-0.0.1.gem`
 
 You might need admin/sudo for that one. Next, you want to do some local testing:
 
