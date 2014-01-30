@@ -123,7 +123,11 @@ function <%= project_name %>_preprocess_field(&$vars) {
     case 'field_slideshow_slide':
       drupal_add_js(drupal_get_path('theme', '<%= project_name %>') . '/vendor/alphecca/js/foundation.js', 'file');
       drupal_add_js(drupal_get_path('theme', '<%= project_name %>') . '/vendor/alphecca/js/foundation.orbit.js', 'file');
-      drupal_add_js('jQuery(document).foundation();', array('type' => 'inline', 'scope' => 'footer', 'weight' => 10));
+      drupal_add_js('jQuery(document).foundation();', array(
+        'type' => 'inline',
+        'scope' => 'footer',
+        'weight' => 10
+      ));
       break;
   }
   */
