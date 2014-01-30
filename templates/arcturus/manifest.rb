@@ -17,7 +17,6 @@ file './template.php.erb', :to => "template.php", :erb => true
 # Stylesheets
 discover :stylesheets
 
-file '../shared/_variables.scss', :like => :stylesheet, :to => 'partials/global/_variables.scss'
 file '../shared/_functions.scss', :like => :stylesheet, :to => 'partials/global/_functions.scss'
 file '../shared/_mixins.scss', :like => :stylesheet, :to => 'partials/global/_mixins.scss'
 file '../shared/_extendables.scss', :like => :stylesheet, :to => 'partials/global/_extendables.scss'
