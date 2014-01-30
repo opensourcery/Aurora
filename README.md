@@ -1,11 +1,66 @@
 # OS Aurora Compass Extension
-This is a fork of the original Aurora compass extension which adds the `arcrturus` flavor. The immediate intent of this flavor is to extend the `polaris` flavor towards more accessible markup.
+This is a fork of the original [Aurora Compass Extension](https://github.com/Snugug/Aurora) which adds the `arcrturus` flavor. The immediate intent of this flavor is to extend the `polaris` flavor towards more accessible markup.
 
-It should be noted that this code is never used directly within a build. Rather this codebase is the source for the gem that used to spin up the subtheme.
+It should be noted that this code is never used directly within a build. Rather, **this codebase is the source for the [OS ACE Ruby Gem](http://rubygems.org/gems/compass-aurora-os) that used to spin up the subtheme.**
 
-## Development Workflow
-To be clear, this is the development workflow for **maintaining the gem source**, if you just want to use the extension to spin up a subtheme, head over to the [gem repo](https://github.com/opensourcery/os-ace_gem).
+## Usage
+Spinning up a subtheme using this tool is relatively simple. However the Aurora system and the `arcturus` flavor subtheme have some dependencies.
 
+### Install Dependencies
+You'll need additional modules and a sass library, so your dependency stack looks like this:
+
+* [Modernizr library](http://modernizr.com)
+* [blockify module](https://drupal.org/project/blockify)
+* [Magic module](https://drupal.org/project/magic)
+* [Bedrock module](https://github.com/opensourcery/bedrock.git)
+* [Alphecca SASS library](https://github.com/opensourcery/alphecca.git)
+
+If you are using Drush Make, your makefile should include the declarations found in [this sample makefile](https://github.com/opensourcery/vista-campus/blob/master/vista_campus/theme.make). If you are not using Drush Make, see the makefile anyways to know where to install the dependencies.
+
+### Spin Up a Subtheme
+
+Install the gem:
+```bash
+gem install compass-aurora-os
+```
+Or, if you already have it installed, make sure it's updated to get the latest
+base theme concept:
+```bash
+gem update compass-aurora-os
+```
+
+Head into your drupal project tree and spin up the theme, and install the dependencies:
+```bash
+cd path/to/themes
+compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts
+bundle install
+```
+
+This gives you a subtheme of the `arcturus` flavor.
+
+[Grunt](http://gruntjs.com/) is an awesome task automator for frontend development, so you should check it out. The Aurora system (and your subtheme) ships with some handy `grunt` utilities. To enable them, go into the theme's root folder and:
+```bash
+compass install aurora-os/grunt
+npm install
+```
+
+### Theme Development with Arcturus
+Once installed and set up, its really just like any other compass-based theme in that you need to "watch" the project directory. If you set up `grunt`, then you have the opportunity to automate other tasks along with compass watching. The basics here is you either need to
+
+```bash
+compass watch
+```
+or
+
+```bash
+grunt watch
+```
+At the root of the theme. I like grunt, maybe you don't, but you should. Using grunt at least for compass watching gives you LiveReload along with it for free.
+
+### Tips & Tricks
+`@TODO:` there's a bunch other opportunities for more automation. Document them here as they are discovered.
+
+## Contributing
 To get started, be sure you have the libraries for Sass+Compass ([install help](http://snugug.com/musings/installing-sass-and-compass-across-all-platform)):
 
 * `ruby`, `rubygems`, and `compass`
@@ -45,14 +100,9 @@ cd my_theme
 bundle install
 ```
 
-See if you got out of the spin up what you thought you did. Rinse. Repeat. There are grunt utilites bundled with the output of the gem as well, see the
-[gem repo](https://github.com/opensourcery/os-ace_gem) for more.
+See if you got out of the spin up what you thought you did. Rinse. Repeat.
 
-### Pushing an Update
-Once you have everything together for and update, we want to up the version
-number and date in `/os-ace/lib/os-aurora.rb`, then push to github. (We're using github for now as we are not sure if we want another gem on rubygems)
-
-# Original docs
+## Aruroa Documentation
 
 ## Aurora Compass Extension [![Gem Version](https://badge.fury.io/rb/compass-aurora.png)](http://badge.fury.io/rb/compass-aurora)
 
