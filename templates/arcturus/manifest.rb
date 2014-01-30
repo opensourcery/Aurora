@@ -25,7 +25,7 @@ file '../shared/_extendables.scss', :like => :stylesheet, :to => 'partials/globa
 # Developer Consistency
 file '../shared/Gemfile.txt', :to => 'Gemfile'
 file '../shared/editorconfig.txt', :to => '.editorconfig'
-file '../shared/gitignore.txt', :to => ".gitignore"
+file './gitignore.txt', :to => ".gitignore"
 
 help %Q{
   @TODO Write some help text.
