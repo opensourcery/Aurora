@@ -67,12 +67,6 @@ To get started, be sure you have the libraries for Sass+Compass ([install help](
 
 The workflow is fairly straightforward:
 
-* Be sure you have dependencies:
-
-```bash
-bundle install
-```
-
 * Make changes, and roll the gem:
 
 ```bash
@@ -93,7 +87,7 @@ You might need admin/sudo for that one. Next, you want to do some local testing:
 compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts
 ````
 
-* Install the dependncies
+* Install the dependencies
 
 ```bash
 cd my_theme
@@ -101,6 +95,8 @@ bundle install
 ```
 
 See if you got out of the spin up what you thought you did. Rinse. Repeat.
+
+**Pull requests are encouraged.**
 
 ## Aruroa Documentation
 
