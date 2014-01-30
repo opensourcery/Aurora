@@ -5,6 +5,12 @@
  * Theme functions for the <%= project_name %> theme.
  */
 
+
+/**
+ * Preprocess Functions
+ */
+
+
 /**
  * Override or insert variables into the maintenance page template.
  *
@@ -23,18 +29,6 @@ function <%= project_name %>_preprocess_maintenance_page(&$vars) {
   // $conf['maintenance_theme'] = '<%= project_name %>';
   // Also, check $vars['db_is_active'] before doing any db queries.
 }
-
-/**
- * Implements hook_modernizr_load_alter().
- *
- * @return (array)
- *   An array to be output as yepnope testObjects.
- */
-/* -- Delete this line if you want to use this function
-function <%= project_name %>_modernizr_load_alter(&$load) {
-
-}
-*/
 
 /**
  * Implements hook_preprocess_html()
@@ -160,6 +154,27 @@ function <%= project_name %>_preprocess_views_view(&$vars) {
 }
 */
 
+/**
+ * Process Functions
+ */
+
+
+/**
+ * Alter Hooks
+ */
+
+
+/**
+ * Implements hook_modernizr_load_alter().
+ *
+ * @return (array)
+ *   An array to be output as yepnope testObjects.
+ */
+/* -- Delete this line if you want to use this function
+function <%= project_name %>_modernizr_load_alter(&$load) {
+
+}
+*/
 
 /**
  * Override or insert css on the site.
@@ -184,6 +199,12 @@ function <%= project_name %>_js_alter(&$js) {
 
 }
 */
+
+
+/**
+ * Theme Function Overrides.
+ */
+
 
 /**
  * Returns HTML for a breadcrumb trail.
