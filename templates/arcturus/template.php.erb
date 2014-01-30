@@ -121,11 +121,20 @@ function <%= project_name %>_preprocess_node(&$vars) {
  * @param (array) $vars
  *   An array of variables to pass to the theme template.
  */
-/* -- Delete this line if you want to use this function
 function <%= project_name %>_preprocess_field(&$vars) {
 
+  /* Delete this to enable the Foundation Orbit slider.
+  $element = $vars['element'];
+  switch ($element['#field_name']) {
+    case 'field_slideshow_slide':
+      drupal_add_js(drupal_get_path('theme', '<%= project_name %>') . '/vendor/alphecca/js/foundation.js', 'file');
+      drupal_add_js(drupal_get_path('theme', '<%= project_name %>') . '/vendor/alphecca/js/foundation.orbit.js', 'file');
+      drupal_add_js('jQuery(document).foundation();', array('type' => 'inline', 'scope' => 'footer', 'weight' => 10));
+      break;
+  }
+  */
+
 }
-*/
 
 /**
  * Override or insert variables into the comment template.
