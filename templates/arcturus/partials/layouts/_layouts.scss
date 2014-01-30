@@ -20,3 +20,29 @@
 @import 'pumice/pumice';
 @import 'quartz/quartz';
 @import 'variolite/variolite';
+
+////////////////////////
+// Regions
+////////////////////////
+.header-container,
+.main-container,
+.footer-container {
+  margin: 0 auto;
+  min-width: $container-width;
+
+  @include breakpoint($small) {
+    width: $small-container-width;
+  }
+
+  @include breakpoint($medium) {
+    width: $medium-container-width;
+  }
+
+  @include breakpoint($large) {
+    width: $large-container-width;
+  }
+
+  @include breakpoint($xlarge) {
+    width: $xlarge-container-width;
+  }
+}
