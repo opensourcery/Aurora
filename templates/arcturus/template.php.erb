@@ -72,11 +72,10 @@ function <%= project_name %>_preprocess_region(&$vars) {
  * @param (array) $vars
  *   An array of variables to pass to the theme template.
  */
-/* -- Delete this line if you want to use this function
 function <%= project_name %>_preprocess_block(&$vars) {
-
+  $vars['classes_array'][] = 'clearfix';
 }
-*/
+
 
 /**
  * Override or insert variables into the entity template.
