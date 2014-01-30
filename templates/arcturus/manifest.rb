@@ -16,6 +16,9 @@ file './template.php.erb', :to => "template.php", :erb => true
 
 # Drupal templates
 file './tpls/page.tpl.php.txt', :to => "./templates/page.tpl.php"
+file './tpls/field--field-slideshow-slide-body-text.tpl.php.txt', :to => "./templates/field--field-slideshow-slide-body-text.tpl.php"
+file './tpls/field--field-slideshow-slide-link.tpl.php.txt', :to => "./templates/"
+file './tpls/field--field-slideshow-slide.tpl.php.txt', :to => "./templates/field--field-slideshow-slide.tpl.php"
 
 # Stylesheets
 discover :stylesheets
