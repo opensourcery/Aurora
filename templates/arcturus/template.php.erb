@@ -200,6 +200,19 @@ function <%= project_name %>_js_alter(&$js) {
 }
 */
 
+/**
+ * Implements hook_form_alter().
+ */
+function <% project_name %>_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'user_login_block':
+      $form['name']['#weight'] = 0;
+      $form['pass']['#weight'] = 0.001;
+      $form['actions']['#weight'] = 0.002;
+      break;
+  }
+}
+
 
 /**
  * Theme Function Overrides.
