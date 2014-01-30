@@ -14,7 +14,7 @@ file './arcturus.info.erb', :to => "#{options[:project_name] || File.basename(Co
 
 file './template.php.erb', :to => "template.php", :erb => true
 
-# Templates
+# Drupal templates
 file './tpls/page.tpl.php.txt', :to => "./templates/page.tpl.php"
 
 # Stylesheets
