@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   # Author Information
   s.authors = ["Sam Richard", "Ian Carrico", "Eric Paul"]
   s.email = ["snugug@gmail.com", "ian@iancarrico.com", "eric@opensourcery.com"]
-  #s.homepage = "http://drupal.org/project/aurora"
+  s.homepage = "http://opensourcery.com"
 
   # Project Description
   s.description = "Aurora Subthemes!"
