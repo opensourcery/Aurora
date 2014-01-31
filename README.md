@@ -10,7 +10,7 @@ Spinning up a subtheme using this tool is relatively simple. However the Aurora 
 You'll need additional modules and a sass library, so your dependency stack looks like this:
 
 * [Modernizr library](http://modernizr.com)
-* [blockify module](https://drupal.org/project/blockify)
+* [Blockify module](https://drupal.org/project/blockify)
 * [Magic module](https://drupal.org/project/magic)
 * [Bedrock module](https://github.com/opensourcery/bedrock.git)
 * [Alphecca SASS library](https://github.com/opensourcery/alphecca.git)
