@@ -4,9 +4,12 @@ This is a fork of the original [Aurora Compass Extension](https://github.com/Snu
 It should be noted that this code is never used directly within a build. Rather, **this codebase is the source for the [OS ACE Ruby Gem](http://rubygems.org/gems/compass-aurora-os) that used to spin up the subtheme.**
 
 ## Usage
+This gem is most easily used by using [Turnip](https://github.com/opensourcery/turnip). See the documentation there for how to spin up a site that makes use of this gem.
+
+### Usage Concept
 Spinning up a subtheme using this tool is relatively simple. However the Aurora system and the `arcturus` flavor subtheme have some dependencies.
 
-### Install Dependencies
+#### Install Dependencies
 You'll need additional modules and a sass library, so your dependency stack looks like this:
 
 * [Modernizr library](http://modernizr.com)
@@ -17,7 +20,9 @@ You'll need additional modules and a sass library, so your dependency stack look
 
 If you are using Drush Make, your makefile should include the declarations found in [this sample makefile](https://github.com/opensourcery/vista-campus/blob/master/vista_campus/theme.make). If you are not using Drush Make, see the makefile anyways to know where to install the dependencies.
 
-### Spin Up a Subtheme
+#### Spin Up a Subtheme
+
+Since the gem is coupled so tightly with Bedrock and Alphecca, you will need to add some symlinks to the directory tree before spinning up the theme. Again refere to [Turnip documentation](https://github.com/opensourcery/turnip) for more information.
 
 Install the gem:
 ```bash
@@ -32,7 +37,11 @@ gem update compass-aurora-os
 Head into your drupal project tree and spin up the theme, and install the dependencies:
 ```bash
 cd path/to/themes
-compass create my_theme -r aurora-os --using aurora-os/arcturus --css-dir=css --javascripts-dir=js --fonts-dir=fonts
+compass create my_theme -r aurora-os --using aurora-os/arcturus \
+--css-dir=css \
+--javascripts-dir=js \
+--fonts-dir=fonts \
+--images-dir=images
 bundle install
 ```
 
