@@ -229,7 +229,7 @@ function <% project_name %>_form_alter(&$form, &$form_state, $form_id) {
  *   An associative array containing:
  *   - breadcrumb: An array containing the breadcrumb links.
  */
-function <% project_name %>_breadcrumb($variables) {
+function <%= project_name =%>_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
   if (!empty($breadcrumb)) {
@@ -256,7 +256,7 @@ function <% project_name %>_breadcrumb($variables) {
  *
  * @ingroup themeable
  */
-function <% project_name %>_container($variables) {
+function <%= project_name =%>_container($variables) {
   $element = $variables['element'];
 
   // Special handling for form elements.
