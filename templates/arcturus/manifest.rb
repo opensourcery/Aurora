@@ -21,13 +21,6 @@ file './tpls/field--field-slideshow-slide-link.tpl.php.txt', :to => "templates/f
 file './tpls/field--field-slideshow-slide.tpl.php.txt', :to => "templates/field--field-slideshow-slide.tpl.php"
 file './tpls/views-view.tpl.php.txt', :to => "templates/views-view.tpl.php"
 
-# Stylesheets
-discover :stylesheets
-
-file '../shared/_functions.scss', :like => :stylesheet, :to => 'partials/global/_functions.scss'
-file '../shared/_mixins.scss', :like => :stylesheet, :to => 'partials/global/_mixins.scss'
-file '../shared/_extendables.scss', :like => :stylesheet, :to => 'partials/global/_extendables.scss'
-
 # Developer Consistency
 file '../shared/Gemfile.txt', :to => 'Gemfile'
 file '../shared/editorconfig.txt', :to => '.editorconfig'
