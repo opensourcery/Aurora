@@ -21,6 +21,9 @@ file './tpls/field--field-slideshow-slide-link.tpl.php.txt', :to => "templates/f
 file './tpls/field--field-slideshow-slide.tpl.php.txt', :to => "templates/field--field-slideshow-slide.tpl.php"
 file './tpls/views-view.tpl.php.txt', :to => "templates/views-view.tpl.php"
 
+# Stylesheets
+discover :stylesheets
+
 # Developer Consistency
 file '../shared/Gemfile.txt', :to => 'Gemfile'
 file '../shared/editorconfig.txt', :to => '.editorconfig'
