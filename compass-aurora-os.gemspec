@@ -25,13 +25,12 @@ Gem::Specification.new do |s|
   s.files +=  Dir.glob("templates/**/*.*")
 
   # Dependent Gems
-  # sass-3.3.rc doesn't work with compass-0.12.2, so cap it.
-  s.add_dependency("sass",              ["~> 3.2.2"])
-  # compass-0.13.alpha breaks singularity and toolkit, so cap it.
+  s.add_dependency("sass",              ["~> 3.2.14"])
   s.add_dependency("compass",           ["~> 0.12.2"])
-  s.add_dependency("toolkit",           [">= 1.2.2"])
-  s.add_dependency("sassy-buttons",     [">= 0.2.0"])
+  s.add_dependency("toolkit",           ["~> 1.2.2"])
+  s.add_dependency("breakpoint",        ["~> 2.0.1"])
+  s.add_dependency("sassy-buttons",     ["~> 0.2.0"])
+  s.add_dependency("singularitygs",     ["~> 1.1.2"])
   s.add_dependency("compass-normalize", [">= 1.4.3"])
   s.add_dependency("bundler",           [">= 1.3.5"])
-  s.add_dependency("css_parser",        [">= 1.3.4"])
 end
