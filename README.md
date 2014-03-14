@@ -88,7 +88,9 @@ gem build compass-aurora-os.gemspec
 gem install compass-aurora-os-0.1.0.gem
 ```
 
-You might need admin/sudo for that one. Next, you want to do some local testing:
+You might need admin/sudo for that one. Note that the version number specified in the above command should NOT be found on rubygems.org and the local gem you just built should be installed. You might want to do a cleanup of the older version as well to ensure you are using that new version.
+
+Next, you want to do some local testing:
 
 * Spin up a subtheme:
 
