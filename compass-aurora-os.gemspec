@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2")
 
   # Author Information
-  s.authors = ["Sam Richard", "Ian Carrico", "Eric Paul"]
-  s.email = ["snugug@gmail.com", "ian@iancarrico.com", "eric@opensourcery.com"]
+  s.authors = ["Sam Richard", "Ian Carrico", "Eric Paul", "Anne Sturdivant"]
+  s.email = ["snugug@gmail.com", "ian@iancarrico.com", "eric@opensourcery.com", "anne@opensourcery.com"]
   s.homepage = "http://opensourcery.com"
 
   # Project Description
