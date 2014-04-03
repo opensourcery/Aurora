@@ -47,7 +47,7 @@ bundle install
 
 This gives you a subtheme of the `arcturus` flavor.
 
-[Grunt](http://gruntjs.com/) is an awesome task automator for frontend development, so you should check it out. The Aurora system (and your subtheme) ships with some handy `grunt` utilities. Before you start with that, be sure to [install Node.js](http://nodejs.org/) first. Then, go into the theme's root folder and set up `bower` and `grunt-cli` on your system:
+[Grunt](http://gruntjs.com/) is an awesome task automator for frontend development, so you should check it out. The Aurora system (and your subtheme) ships with some handy `grunt` utilities. Before you start with that, be sure to [install Node.js](http://nodejs.org/) first, then set up `bower` and `grunt-cli` on your system:
 
 ```bash
 sudo npm install -g bower
@@ -56,6 +56,7 @@ sudo npm install -g grunt-cli
 Then set up `grunt` and `bower` for your project:
 
 ```bash
+cd /path/to/theme
 compass install aurora-os/bower
 bower install
 compass install aurora-os/grunt
