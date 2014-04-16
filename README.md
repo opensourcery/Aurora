@@ -64,20 +64,26 @@ npm install
 ```
 
 ### Theme Development with Arcturus
-Once installed and set up, its really just like any other compass-based theme in that you need to "watch" the project directory. If you set up `grunt`, then you have the opportunity to automate other tasks along with compass watching. The basics here is you either need to
-
-```bash
-compass watch
-```
-or
+Once installed and set up, its really just like any other compass-based theme in that you need to "watch" the project directory:
 
 ```bash
 grunt watch
 ```
-At the root of the theme. I like grunt, maybe you don't, but you should. Using grunt at least for compass watching gives you LiveReload along with it for free.
 
-### Tips & Tricks
-`@TODO:` there's a bunch other opportunities for more automation. Document them here as they are discovered.
+#### Pushes & Deployments
+Before pushing your code to github, you always want to build/optimize your theme resources:
+
+```bash
+grunt build
+````
+
+This will minify images, recompile CSS and minify javascript.
+
+Before deploying to production from your local machine, you'll want to?
+
+```bash
+@todo create custom trim task
+```
 
 ## Contributing
 To get started, be sure you have the libraries for Sass+Compass ([install help](http://snugug.com/musings/installing-sass-and-compass-across-all-platform)):
