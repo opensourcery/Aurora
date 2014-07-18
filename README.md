@@ -42,6 +42,9 @@ compass create my_theme -r aurora-os --using aurora-os/arcturus \
 --javascripts-dir=js \
 --fonts-dir=fonts \
 --images-dir=images
+```
+Move into your newly created theme directory and run the following command.
+```
 bundle install
 ```
 
